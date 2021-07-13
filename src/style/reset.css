@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+html {
+    overflow-y: scroll;
+  }
+  
+  :root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  :root body {
+    position: absolute;
+  }
+  
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <!-- <Nav/> -->
     <router-view/>
   </div>
 </template>
@@ -30,3 +27,23 @@
   }
 }
 </style>
+<script>
+//import HelloWorld from './components/HelloWorld.vue'
+//import Cart from './components/Cart.vue'
+//import Nav from './components/Nav'
+export default {
+  name: "App",
+  components: {
+    //Nav
+  },
+  created() {
+    let songList = localStorage.getItem("songList");
+    let current = localStorage.getItem("current");
+    if (songList) {
+      this.$store.commit("song/initCurrentSongListMut", JSON.parse(songList));
+      this.$store.commit("song/getCurrentSongIndexMut", current);
+    }
+  
+  }
+};
+</script>
