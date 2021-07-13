@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>注册页面</h3>
 
     <van-form @submit="toReg">
       <van-field

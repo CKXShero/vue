@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>登录页面</h3>
+    <h3>登录页面1234</h3>
     <van-form @submit="onSubmit">
       <van-field
         v-model="username"
